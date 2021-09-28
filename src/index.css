@@ -1,13 +1,144 @@
+/*
+  color Pallet
+  plain bg: #edeef7
+  navy blue[buttons,footer,etc]: #1e3163
+  violet[logo,active state] : #7868e6
+
+  Fonts
+  logo: Varela Round , sans-serif
+  links, text: Poppins, sans-serif
+
+*/
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oxygen&family=Varela+Round&display=swap");
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  background-color: #edeef7;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+/*Navbar Styles start*/
+
+.navbar-container {
+  height: 10vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+}
+
+.navbar-logo {
+  height: 100%;
+  width: 20%;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+}
+
+.navbar-logo-img {
+  height: 20px;
+  width: 20px;
+}
+.navbar-logo-heading {
+  padding-left: 10px;
+  font-weight: bold;
+  font-family: "Varela Round", sans-serif;
+}
+.navbar-img-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar-content {
+  display: flex;
+  width: 50%;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  font-size: 0.8rem;
+}
+.navbar-link {
+  text-decoration: none;
+  outline: none;
+  color: #000;
+  font-weight: bold;
+}
+
+.Button-fill {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 33px;
+  width: 80px;
+  background: #1e3163;
+  outline: none;
+  border: none;
+  border-radius: 25px;
+  border: 1px solid #1e3163;
+  color: #fff;
+  font-size: 0.7rem;
+  transition: all 0.2s ease-in;
+  text-decoration: none;
+  text-align: center;
+  font-weight: bold;
+}
+.Button-hollow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 34px;
+  width: 81px;
+  background: transparent;
+  outline: none;
+  border: 1px solid #1e3163;
+  border-radius: 25px;
+  color: #1e3163;
+  transition: all 0.2s ease-in;
+  text-decoration: none;
+  text-align: center;
+  font-weight: bold;
+}
+
+.Button-hollow:hover {
+  transform: scale(1.1);
+}
+.Button-fill:hover {
+  transform: scale(1.1);
+}
+.active {
+  border-bottom: 2px solid #7868e6;
+}
+.navbar-logo-home {
+  text-decoration: none;
+  color: #000;
+}
+@media only screen and (max-width: 700px) {
+  .navbar-logo {
+    width: 85%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .navbar-content {
+    visibility: hidden;
+    z-index: -1;
+    width: 15%;
+  }
+}
+
+/* Navbar Styles End */

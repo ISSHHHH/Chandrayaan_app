@@ -1,6 +1,7 @@
 import Navbar from './components/Navbar/Navbar';
 import Footer from './components/Footer/Footer';
-import {BrowserRouter as Router} from 'react-router-dom';
+import Blogs from './components/Blogs/Blogs';
+import {BrowserRouter as Router,Route} from 'react-router-dom';
 import './App.css';
 
 function App() {
@@ -8,7 +9,7 @@ function App() {
     <Router>
       <div className='main-app-container'>
         <Navbar/>
-        <div style={{height:'100vh'}}></div>
+        <Route path='/Blogs' component={Blogs}/>
         <Footer/>
       </div>
     </Router>

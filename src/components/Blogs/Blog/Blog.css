@@ -1,0 +1,91 @@
+.Blog-container {
+  height: 250px;
+  width: 40%;
+  margin-bottom: 2rem;
+  border-radius: 4px;
+  -webkit-box-shadow: 0 8px 12px -6px #2d46b9;
+  -moz-box-shadow: 0 8px 12px -6px #2d46b9;
+  box-shadow: 0 4px 12px -6px #2d46b9;
+  font-family: "Poppins", "sans-serif";
+}
+.Blog-header {
+  height: 40%;
+  min-height: fit-content;
+  width: 100%;
+  background: linear-gradient(to right, #7868e6, #2d46b9);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+  font-family: "Poppins", "sans-serif";
+}
+.Blog-Title-date-wrapper {
+  height: 100%;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto;
+}
+.Blog-Title {
+  height: fit-content;
+  margin: 0;
+  padding: 0;
+  color: aliceblue;
+  overflow: hidden;
+}
+.Blog-date {
+  height: 30px;
+  margin: 0;
+  padding: 0;
+  font-size: 0.5em;
+  color: aliceblue;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+}
+
+.Blog-like-ratio {
+  width: 30%;
+  color: white;
+}
+.Blog-btn {
+  background: transparent;
+  border: none;
+  outline: none;
+  text-align: center;
+  font-size: 1.4rem;
+  color: white;
+  cursor: pointer;
+}
+.active-like {
+  color: #3db2ff;
+}
+.active-dislike {
+  color: #fb3640;
+}
+.fa-building {
+  color: #2d46b9;
+}
+.fa-address-card {
+  color: #39a2db;
+}
+.fa-map-marker-alt {
+  color: #fb3640;
+}
+.Blog-details ul {
+  margin: 0;
+}
+.Blog-details ul li {
+  height: 35px;
+}
+@media (max-width: 700px) {
+  .Blogs-Header {
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  .Blog-container {
+    width: 95vw;
+  }
+}

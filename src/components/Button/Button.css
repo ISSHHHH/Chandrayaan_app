@@ -1,0 +1,44 @@
+.Button-fill {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 33px;
+  width: 80px;
+  background: #1e3163;
+  outline: none;
+  border: none;
+  border-radius: 25px;
+  border: 1px solid #1e3163;
+  color: #fff;
+  font-size: 0.7rem;
+  transition: all 0.2s ease-in;
+  text-decoration: none;
+  text-align: center;
+  font-weight: bold;
+}
+.Button-hollow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 34px;
+  width: 81px;
+  background: transparent;
+  outline: none;
+  border: 1px solid #1e3163;
+  border-radius: 25px;
+  color: #1e3163;
+  transition: all 0.2s ease-in;
+  text-decoration: none;
+  text-align: center;
+  font-weight: bold;
+}
+
+.Button-hollow:hover {
+  transform: scale(1.1);
+}
+.Button-fill:hover {
+  transform: scale(1.1);
+}
+.active {
+  border-bottom: 2px solid #7868e6;
+}
